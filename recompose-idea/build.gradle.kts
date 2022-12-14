@@ -5,7 +5,7 @@ plugins {
     kotlin("jvm")
     id("io.gitlab.arturbosch.detekt")
     id("org.jlleitschuh.gradle.ktlint")
-    id("org.jetbrains.intellij") version "0.4.22"
+    id("org.jetbrains.intellij") version "1.10.1"
     id("org.jetbrains.changelog") version "0.5.0"
 }
 
@@ -25,7 +25,7 @@ dependencies {
 
 intellij {
     pluginName = "Recompose"
-    version = "2019.3"
+    version = "2021.3"
     updateSinceUntilBuild = false
     downloadSources = true
     updateSinceUntilBuild = true
@@ -45,7 +45,7 @@ tasks {
         }
     }
     patchPluginXml {
-        sinceBuild("193")
-        untilBuild("213.*")
+        sinceBuild("213")
+        untilBuild("223.*")
     }
 }
